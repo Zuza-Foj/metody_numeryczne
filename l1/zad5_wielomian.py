@@ -21,4 +21,5 @@ if __name__=="__main__":
 '''Krótkie wnioski: Wersja Hornera powinna być szybsza. 
 Wprost ze wzoru potrzeba 4 potęg i 4 dodawań, a w schemacie Hornera są tylko 
 4 mnożenia i 4 dodawania. W Pythonie operator ** jest wolniejszy od zwykłego 
-mnożenia.'''
+mnożenia.
+200001    0.083    0.000    0.083    0.000 zad5_wielomian.py:3(wielomian)'''

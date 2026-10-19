@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 6, 400)
+x = np.linspace(-1, 2, 400)
 
 z1 = []
 z2 = []
@@ -57,6 +57,6 @@ for ax in (ax3, ax4):
     ax.grid(True)
     ax.legend()
 plt.tight_layout()
+fig1.savefig('pade_bledy.pdf')
 plt.show()
 
-# zapisanie do pliku!!!!
