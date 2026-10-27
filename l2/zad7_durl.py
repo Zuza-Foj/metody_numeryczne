@@ -4,4 +4,5 @@ m_A = np.array([[10, -2, -1, 2, 3, 1, -4, 7], [5, 11, 3, 10, -3, 3, 3, -4], [7, 
 b = np.array([0, 12, -5, 3, -25, -26, 9, -7])
 
 x = np.linalg.solve(m_A, b)
-print('[x1, x2, x3, x4, x5, x6, x7, x8] =', x)
+print('[x1, x2, x3, x4, x5, x6, x7, x8] =', x.tolist())
+
