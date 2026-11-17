@@ -1,4 +1,6 @@
 import numpy as np
+import scipy.linalg as scipy
+from gauss_jordan import gauss_jordan
 
 '''Wyliczyłam a0 z pierwszego punktu [0, -1], a0 = -1.'''
 
@@ -14,7 +16,10 @@ print(y, x)
 m_A = np.array(x)
 b = np.array(y)
 
-a = np.linalg.solve(m_A, b)
-print('[a0, a1, a2, a3, a4] =', a.tolist())
+a = scipy.solve(m_A, b)
+print('biblioteka: [a0, a1, a2, a3, a4] =', a.tolist())
+
+a_w = gauss_jordan(m_A, b)
+print('własna: [a0, a1, a2, a3, a4] =', a_w.tolist())
 
 
